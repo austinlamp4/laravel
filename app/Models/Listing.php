@@ -1,32 +1,11 @@
 <?php
 
-    namespace App\Models; //Allows for usage in other files.
+namespace App\Models;
 
-    class Listing {
-        private static $data = [
-            [
-                'id' => 1,
-                'title' => 'Listing One',
-                'description' => 'Some random stuff that would work well as a description'
-            ],
-            [
-                'id' => 2,
-                'title' => 'Listing Two',
-                'description' => 'Some MORE random stuff that would work well as a description'
-            ]   
-        ];
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-        public static function all() {
-            return self::$data;
-        }
-
-        public static function find_listing($id) {
-            foreach(self::$data as $listing) {
-                if($listing['id'] == $id) {
-                    return $listing;
-                }
-            }
-        }
-    }
-
-?>
+class Listing extends Model
+{
+    use HasFactory;
+}
