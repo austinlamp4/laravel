@@ -25,14 +25,11 @@ Route::get('/', function() {
 /*
 Author: Austin Lamp
 Date: 02/03/23
+Edited: 03/01/23
 Description: The below is a route that gets and displays a single listing instead of all of the listings.
 */
-Route::get('/listing/{id}', function($id) {
-    $data = Listing::find($id);
-    if(isset($data)) {
-        return view('listing', [
-            'heading' => 'Selected Listing: ' . $data["title"],
-            'listing' => $data
-        ]);
-    }
+Route::get('/listing/{listing}', function(Listing $listing) {
+    return view('listing', [
+        'listing' => $listing
+    ]);
 }) -> where('id','[0-9]+');
