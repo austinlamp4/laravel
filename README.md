@@ -1,3 +1,7 @@
+# About this project:
+
+This project was designed to create a web application that utilizes all modern features of most web applications. This was created to help me learn more about PHP and the laravel framework in my continued effort to learn everything about web applications and everything web application security.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
